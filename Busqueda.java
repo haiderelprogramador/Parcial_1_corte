@@ -1,7 +1,5 @@
 package Parcial;
 
-import java.util.List;
-
 public class Busqueda {
     private String criterioBusqueda;
 

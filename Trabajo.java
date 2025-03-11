@@ -8,7 +8,6 @@ public class Trabajo {
     private List<PalabraClave> palabrasClave;
     private String estado;
 
-    // Constructor
     public Trabajo(String titulo, String resumen, List<Autor> autores, List<PalabraClave> palabrasClave, String estado) {
         this.titulo = titulo;
         this.resumen = resumen;

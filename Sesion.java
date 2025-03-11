@@ -1,17 +1,16 @@
 package Parcial;
 
-import java.util.Date;
 import java.util.List;
 
 public class Sesion {
     private String sala;
-    private Date fecha;
-    private Date hora;
+    private String fecha;
+    private String hora;
     private List<Trabajo> trabajosAsignados;
     private Chairman chairman;
 
-    // Constructor
-    public Sesion(String sala, Date fecha, Date hora, List<Trabajo> trabajosAsignados, Chairman chairman) {
+    
+    public Sesion(String sala, String fecha, String hora, List<Trabajo> trabajosAsignados, Chairman chairman) {
         this.sala = sala;
         this.fecha = fecha;
         this.hora = hora;
@@ -19,23 +18,19 @@ public class Sesion {
         this.chairman = chairman;
     }
 
+    // Getters y Setters
     public String getSala() { return sala; }
     public void setSala(String sala) { this.sala = sala; }
 
-    public Date getFecha() { return fecha; }
-    public void setFecha(Date fecha) { this.fecha = fecha; }
+    public String getFecha() { return fecha; }
+    public void setFecha(String fecha) { this.fecha = fecha; }
 
-    public Date getHora() { return hora; }
-    public void setHora(Date hora) { this.hora = hora; }
+    public String getHora() { return hora; }
+    public void setHora(String hora) { this.hora = hora; }
 
     public List<Trabajo> getTrabajosAsignados() { return trabajosAsignados; }
     public void setTrabajosAsignados(List<Trabajo> trabajosAsignados) { this.trabajosAsignados = trabajosAsignados; }
 
     public Chairman getChairman() { return chairman; }
     public void setChairman(Chairman chairman) { this.chairman = chairman; }
-
-
-    public void asignarTrabajo(Trabajo trabajo) {
-        trabajosAsignados.add(trabajo);
-    }
 }
